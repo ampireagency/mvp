@@ -10,7 +10,7 @@ const page = () => {
               Sign in
             </h1>
             <p className="mt-2 text-sm text-gray-600 dark:text-neutral-400">
-              Don't have an account yet?
+              Dont have an account yet?
               <a
                 className="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500"
                 href="../examples/html/signup.html"
@@ -37,7 +37,6 @@ const page = () => {
                       id="email"
                       name="email"
                       className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                      required=""
                       aria-describedby="email-error"
                     />
                     <div className="hidden absolute inset-y-0 end-0 pointer-events-none pe-3">
@@ -84,7 +83,6 @@ const page = () => {
                       id="password"
                       name="password"
                       className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                      required=""
                       aria-describedby="password-error"
                     />
                     <div className="hidden absolute inset-y-0 end-0 pointer-events-none pe-3">
