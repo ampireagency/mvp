@@ -22,7 +22,7 @@ export default function Home() {
             <div className="text-center">
               <h1 className="text-3xl leading-normal lg:!leading-[4rem] font-bold tracking-tight text-gray-900 sm:text-5xl">
                 Revolutionize exam preparation with{" "}
-                <span className="bg-[#11791E] text-center flex px-6  py-0 text-white rounded-xl mt-0">
+                <span className="bg-[#11791E] text-center lg:block flex px-6  py-0 text-white rounded-xl mt-0">
                   AI-Powered Assessments
                 </span>
               </h1>
