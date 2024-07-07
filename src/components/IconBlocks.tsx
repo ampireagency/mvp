@@ -48,7 +48,7 @@ const IconBlocks: React.FC = () => {
           </p>
           <p className="mt-5">
             <a
-              className="inline-flex items-center gap-x-1 font-medium text-blue-600 dark:text-blue-500"
+              className="inline-flex items-center gap-x-1 font-medium text-green-500 dark:text-green-500"
               href="#"
             >
               Contact sales to learn more

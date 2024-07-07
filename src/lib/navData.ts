@@ -6,7 +6,7 @@ export interface NavItem {
 }
 
 export const navItems: NavItem[] = [
-  { name: "Home", href: "/", current: true },
+  { name: "Home", href: "/" },
   { name: "SignUp", href: "/signup" },
   { name: "login", href: "/login" },
 ];

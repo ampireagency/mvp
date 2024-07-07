@@ -16,7 +16,7 @@ const Header = () => {
               href="#"
               aria-label="Brand"
             >
-              Brand
+              correctmate
             </a>
             <div className="sm:hidden">
               <button

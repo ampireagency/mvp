@@ -1,65 +1,68 @@
 import Contact from "@/components/contact";
 import IconBlocks from "@/components/IconBlocks";
+import ProcessSteps from "@/components/process-steps";
 import { features } from "@/lib/utils";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="bg-white">
-      <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          />
-        </div>
-        <div className="mx-auto max-w-4xl py-12 sm:py-12 lg:py-24">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Revolutionize exam preparation with AI-Powered Assessments
-              <a href="#" className="font-semibold text-indigo-600">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">→</span>
-              </a>
+      <div className="relative isolate px-6 pt-8 lg:pt-14 lg:px-8">
+        <div className="mx-auto flex max-w-full lg:flex-row flex-col-reverse  w-full py-12 sm:py-12 lg:py-24">
+          <div className="flex items-center justify-center">
+            <Image
+              src={"/images/smart-people.png"}
+              alt="smart"
+              className=""
+              width={400}
+              height={400}
+            />
+          </div>
+          <div className="lg:w-[75%] w-full">
+            <div className="text-center">
+              <h1 className="text-3xl leading-normal lg:!leading-[4rem] font-bold tracking-tight text-gray-900 sm:text-5xl">
+                Revolutionize exam preparation with{" "}
+                <span className="bg-[#11791E] w-full text-center flex px-6  py-0 text-white rounded-xl mt-0">
+                  AI-Powered Assessments
+                </span>
+              </h1>
+              <h1 className="text-xs font-bold tracking-tight text-gray-900 sm:text-xl mt-4">
+                Empower Your Students with Advanced Insights and Performance
+                Analytics
+              </h1>
+
+              <p className="lg:mt-6 mt-2 text-[10px] lg:text-base leading-normal lg:leading-8 text-gray-600">
+                Empower your students with cutting-edge technology that provides
+                advanced insights and performance analytics. Our AI-driven
+                platform enhances learning by offering personalized feedback,
+                detailed progress reports, and targeted practice. Transform the
+                way your students prepare for exams and help them achieve their
+                academic goals with precision and confidence.
+              </p>
+              <div className="mt-10 flex items-center justify-center gap-x-6">
+                <a
+                  href="#contact"
+                  className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Get Started
+                </a>
+                <a
+                  href="#"
+                  className="text-sm font-semibold leading-6 text-gray-900"
+                >
+                  Request a Demo <span aria-hidden="true">→</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Revolutionize exam preparation with AI-Powered Assessments
-            </h1>
-            <h1 className="text-base font-bold tracking-tight text-gray-900 sm:text-xl mt-4">
-              Empower Your Students with Advanced Insights and Performance
-              Analytics
-            </h1>
-
-            <p className="mt-6 text-base leading-8 text-gray-600">
-              Empower your students with cutting-edge technology that provides
-              advanced insights and performance analytics. Our AI-driven
-              platform enhances learning by offering personalized feedback,
-              detailed progress reports, and targeted practice. Transform the
-              way your students prepare for exams and help them achieve their
-              academic goals with precision and confidence.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Get Started
-              </a>
-              <a
-                href="#"
-                className="text-sm font-semibold leading-6 text-gray-900"
-              >
-                Request a Demo <span aria-hidden="true">→</span>
-              </a>
-            </div>
+          <div className="hidden lg:block">
+            <Image
+              className=""
+              src={"/images/online-test.png"}
+              alt="smart"
+              width={400}
+              height={400}
+            />
           </div>
         </div>
         <div
@@ -79,7 +82,7 @@ export default function Home() {
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div className="lg:pr-8 lg:pt-4">
                 <div className="lg:max-w-lg">
-                  <h2 className="text-base font-semibold leading-7 text-indigo-600">
+                  <h2 className="text-base font-semibold leading-7 text-green-500">
                     Core Features
                   </h2>
                   <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -97,7 +100,7 @@ export default function Home() {
                         <dt className="inline font-semibold text-gray-900">
                           <feature.icon
                             aria-hidden="true"
-                            className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                            className="absolute left-1 top-1 h-5 w-5 text-green-500"
                           />
                           {feature.name}
                         </dt>{" "}
@@ -109,7 +112,7 @@ export default function Home() {
               </div>
               <img
                 alt="Product screenshot"
-                src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+                src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg"
                 width={2432}
                 height={1442}
                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
@@ -118,22 +121,27 @@ export default function Home() {
           </div>
         </div>
 
-        <IconBlocks />
+        {/* <IconBlocks /> */}
+        <div className="container mx-auto px-4 py-8">
+          <h1 className="text-3xl font-bold text-center mb-8">How its Work</h1>
+          <ProcessSteps />
+        </div>
 
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 mt-20">
           <div className="relative isolate overflow-hidden bg-white px-6 py-20 text-center sm:rounded-3xl sm:border sm:border-gray-100 sm:px-16 sm:shadow-sm">
             <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Join our community today!
+              Request us for free Demo
             </h2>
             <h3 className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-500">
-              Sign up for exclusive access to events, resources, and more
+              Sign up for exclusive access to events, resources, and updates on
+              our AI-powered exam preparation assessment tool.
             </h3>
             <div className="mt-8 flex items-center justify-center gap-x-6">
               <a
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-                href="#"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-green-500 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                href="#contact"
               >
-                Call to Action
+                Book a Demo
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-4 w-4"
