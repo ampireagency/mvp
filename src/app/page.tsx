@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="bg-white">
       <div className="relative isolate px-6 pt-8 lg:pt-14 lg:px-8">
-        <div className="mx-auto flex max-w-full lg:flex-row flex-col-reverse  w-full py-12 sm:py-12 lg:py-24">
+        {/* <div className="mx-auto flex max-w-full lg:flex-row flex-col-reverse  w-full py-12 sm:py-12 lg:py-24">
           <div className="flex items-center justify-center">
             <Image
               src={"/images/smart-people.png"}
@@ -55,7 +55,64 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden  items-center justify-center lg:flex">
+            <Image
+              className=""
+              src={"/images/online-test.png"}
+              alt="smart"
+              width={400}
+              height={400}
+            />
+          </div>
+        </div> */}
+        <div className="mx-auto flex max-w-full flex-col-reverse lg:flex-row w-full py-12 sm:py-12 lg:py-24">
+          <div className="flex items-center justify-center lg:justify-end lg:w-1/4">
+            <Image
+              src={"/images/smart-people.png"}
+              alt="smart"
+              className=""
+              width={400}
+              height={400}
+            />
+          </div>
+          <div className="lg:w-[75%] w-full">
+            <div className="text-center lg:text-left lg:pl-8">
+              <h1 className="text-3xl text-center leading-normal lg:leading-[4rem] font-bold tracking-tight text-gray-900 sm:text-5xl">
+                Revolutionize exam preparation with{" "}
+                <span className="bg-[#11791E] text-center lg:text-left lg:inline-block flex justify-center px-6 py-0 text-white rounded-xl mt-0">
+                  AI-Powered Assessments
+                </span>
+              </h1>
+              <h2 className="text-xs font-bold text-center tracking-tight text-gray-900 sm:text-xl mt-4">
+                Empower Your Students with Advanced Insights and Performance
+                Analytics
+              </h2>
+
+              <p className="lg:mt-6 mt-2 text-[10px] text-center lg:text-base leading-normal lg:leading-8 text-gray-600">
+                Empower your students with cutting-edge technology that provides
+                advanced insights and performance analytics. Our AI-driven
+                platform enhances learning by offering personalized feedback,
+                detailed progress reports, and targeted practice. Transform the
+                way your students prepare for exams and help them achieve their
+                academic goals with precision and confidence.
+              </p>
+              <div className="mt-10 flex flex-col lg:flex-row items-center justify-center lg:justify-center gap-4 lg:gap-x-6">
+                <a
+                  href="#contact"
+                  className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Get Started
+                </a>
+                <a
+                  href="#"
+                  className="text-sm font-semibold leading-6 text-gray-900"
+                >
+                  Request a Demo <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center justify-center lg:w-1/4 lg:flex hidden lg:block">
             <Image
               className=""
               src={"/images/online-test.png"}
@@ -65,6 +122,7 @@ export default function Home() {
             />
           </div>
         </div>
+
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           aria-hidden="true"
