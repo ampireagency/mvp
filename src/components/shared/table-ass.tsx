@@ -2,9 +2,18 @@ import Link from "next/link";
 import React from "react";
 
 const data = [
-  { name: "John Brown", age: 45, address: "New York No. 1 Lake Park" },
-  { name: "Jim Green", age: 27, address: "London No. 1 Lake Park" },
-  { name: "Joe Black", age: 31, address: "Sidney No. 1 Lake Park" },
+  {
+    name: "John Brown",
+    age: 45,
+    address: "New York No. 1 Lake Park",
+    studentId: "1234",
+  },
+  {
+    name: "Jim Green",
+    age: 27,
+    address: "London No. 1 Lake Park",
+    studentId: "1235",
+  },
 ];
 
 const TableAss = ({ isView }: any) => {
@@ -36,25 +45,20 @@ const TableAss = ({ isView }: any) => {
                       scope="col"
                       className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-400"
                     >
-                      Data
+                      student ID
                     </th>
                     <th
                       scope="col"
                       className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-400"
                     >
-                      Subject
+                      Name
                     </th>
-                    <th
-                      scope="col"
-                      className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-400"
-                    >
-                      Status
-                    </th>
+
                     <th
                       scope="col"
                       className="px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase dark:text-neutral-400"
                     >
-                      Action
+                      Result
                     </th>
                   </tr>
                 </thead>
@@ -72,14 +76,12 @@ const TableAss = ({ isView }: any) => {
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-200">
+                        {person.studentId}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
                         {person.name}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
-                        {person.age}
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
-                        {person.address}
-                      </td>
+
                       <td className="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
                         <Link
                           href={isView ? "/dashboard/view-assesment" : "#"}

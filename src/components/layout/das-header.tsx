@@ -10,8 +10,8 @@ const DasHeader = () => {
           className="flex basis-full items-center w-full mx-auto px-4 sm:px-6"
           aria-label="Global"
         >
-          <div className="me-5 lg:me-0 lg:hidden">
-            <h2 className="text-xl font-bold">Correct Mate</h2>
+          <div className="me-5 lg:me-0 w-full lg:hidden">
+            <h2 className="text-base w-full flex font-bold">Correct Mate</h2>
           </div>
           <div className="w-full flex items-center justify-end ms-auto sm:justify-between sm:gap-x-3 sm:order-3">
             <div className="sm:hidden">
