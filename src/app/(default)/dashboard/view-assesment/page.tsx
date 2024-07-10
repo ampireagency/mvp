@@ -4,7 +4,6 @@ const page = () => {
   return (
     <div className="px-24 py-5">
       <div className="lg:ps-64">
-        {/* <Viewer fileUrl="/AmityJEESamplePaper.pdf" /> */}
         <div className="flex gap-6  items-center">
           <div className="flex-1 mt-12">
             <iframe
@@ -27,7 +26,7 @@ const page = () => {
           </div>
           <div className="flex-1">
             <div className="">
-              <h1 className="px-4 py-4">Success</h1>
+              <h1 className="px-4 py-4">Feedback</h1>
               <div className="border shadow-md shadow-green-200 rounded-3xl h-[570px] px-6 py-3">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque

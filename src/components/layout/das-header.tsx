@@ -36,7 +36,7 @@ const DasHeader = () => {
                 </svg>
               </button>
             </div>
-            <div className="hidden sm:block">
+            {/* <div className="hidden sm:block">
               <label htmlFor="icon" className="sr-only">
                 Search
               </label>
@@ -66,7 +66,7 @@ const DasHeader = () => {
                   placeholder="Search"
                 />
               </div>
-            </div>
+            </div> */}
             <div className="flex flex-row items-center justify-end gap-2">
               <div className="hs-dropdown [--placement:bottom-right] relative inline-flex">
                 <button

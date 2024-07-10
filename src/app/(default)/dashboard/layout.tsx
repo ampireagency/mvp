@@ -1,6 +1,3 @@
-import type { Metadata } from "next";
-
-import Header from "@/components/layout/header";
 import Sidebar from "@/components/layout/sidebar";
 import DasHeader from "@/components/layout/das-header";
 

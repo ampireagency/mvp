@@ -4,13 +4,13 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="lg:ps-64 flex min-h-screen h-[80vh] items-center justify-center">
+    <div className="lg:ps-64 w-full flex min-h-screen h-[80vh] items-center justify-center">
       <div className="space-y-4">
         <DatePicker />
         <div className="space-y-4">
           <div className="flex rounded-lg shadow-sm">
             <span className="px-4 inline-flex items-center min-w-fit rounded-s-md border border-e-0 border-gray-200 bg-gray-50 text-sm text-gray-500 dark:bg-neutral-700 dark:border-neutral-700 dark:text-neutral-400">
-              Default
+              Subject
             </span>
             <input
               type="text"
@@ -19,7 +19,7 @@ const page = () => {
           </div>
           <div className="flex rounded-lg shadow-sm">
             <span className="px-4 inline-flex items-center min-w-fit rounded-s-md border border-e-0 border-gray-200 bg-gray-50 text-sm text-gray-500 dark:bg-neutral-700 dark:border-neutral-700 dark:text-neutral-400">
-              Answer Key
+              Upload the answer key (optional):
             </span>
             <input
               placeholder="optional"
@@ -32,7 +32,7 @@ const page = () => {
               Http://
             </span>
             <input
-              placeholder="Provide a Drive Link here"
+              placeholder="You can share the drive folder link here"
               type="text"
               className="py-3 px-4 pe-11 block border w-full border-gray-200 shadow-sm rounded-e-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
             />
@@ -42,7 +42,7 @@ const page = () => {
               Choose File
             </span>
             <input
-              placeholder="Provide a Drive Link here"
+              placeholder="Upload the students answer sheets here"
               type="file"
               className="py-3 px-4 pe-11 block border w-full border-gray-200 shadow-sm rounded-e-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
             />

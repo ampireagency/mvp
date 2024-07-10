@@ -1,18 +1,22 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
 
 const data = [
   {
-    name: "John Brown",
+    name: "Rahul",
     age: 45,
     address: "New York No. 1 Lake Park",
     studentId: "1234",
+    date: "12/12/2021",
+    subject: "Mathematics",
   },
   {
-    name: "Jim Green",
+    name: "Ajay",
     age: 27,
     address: "London No. 1 Lake Park",
     studentId: "1235",
+    date: "12/12/2021",
+    subject: "Physics",
   },
 ];
 
@@ -45,20 +49,19 @@ const TableAss = ({ isView }: any) => {
                       scope="col"
                       className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-400"
                     >
-                      student ID
+                      Date
                     </th>
                     <th
                       scope="col"
                       className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-400"
                     >
-                      Name
+                      Subject
                     </th>
-
                     <th
                       scope="col"
                       className="px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase dark:text-neutral-400"
                     >
-                      Result
+                      Status
                     </th>
                   </tr>
                 </thead>
@@ -76,19 +79,18 @@ const TableAss = ({ isView }: any) => {
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-200">
-                        {person.studentId}
+                        {person.date}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
-                        {person.name}
+                        {person.subject}
                       </td>
-
                       <td className="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
                         <Link
-                          href={isView ? "/dashboard/view-assesment" : "#"}
+                          href={!isView ? "#" : "/dashboard/view-assesment"}
                           type="button"
                           className="inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-blue-600 hover:text-blue-800 disabled:opacity-50 disabled:pointer-events-none dark:text-blue-500 dark:hover:text-blue-400"
                         >
-                          {isView ? "View" : "In progress "}
+                          {isView ? "view" : "In Progress"}
                         </Link>
                       </td>
                     </tr>

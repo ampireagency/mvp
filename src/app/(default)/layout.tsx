@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-
 import Header from "@/components/layout/header";
 
 export default function RLayout({
