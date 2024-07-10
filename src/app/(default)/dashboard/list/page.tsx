@@ -13,7 +13,7 @@ const page = () => {
             <p>Datae : 6 july 2024</p>
           </div>
           <div className="p-4 sm:p-6 border rounded-3xl space-y-4 sm:space-y-6">
-            <Search />
+            
             <TableList isView={true} />
           </div>
         </div>
