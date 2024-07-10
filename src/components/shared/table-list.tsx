@@ -79,7 +79,7 @@ const TableList = ({ isView }: any) => {
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-200">
-                        {person.studentID || 123456}
+                        {person.studentId}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
                         {person.name}
