@@ -1,5 +1,5 @@
 import Search from "@/components/shared/search";
-import TableAss from "@/components/shared/table-ass";
+import TableList from "@/components/shared/table-list";
 import React from "react";
 
 const page = () => {
@@ -14,7 +14,7 @@ const page = () => {
           </div>
           <div className="p-4 sm:p-6 border rounded-3xl space-y-4 sm:space-y-6">
             <Search />
-            <TableAss isView={true} />
+            <TableList isView={true} />
           </div>
         </div>
         {/* End Content */}
